@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+}
+.outer-container{
+    width: 100%;
+}
+.text{
+    font-size: 50px;
+    font-weight: 500;
+}
+.text1{
+    margin-left: 30%;
+    background-color: darkorange;
+}
+.text2{
+    margin-left: 3%;
+    background-color: white;
+}
+.text3{
+    margin-left: 3%;
+    background-color: green;
+}
+.sun{
+    background-image: url(./sun.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    margin-top: -18%;
+    margin-left: 80%;
+   animation: sun-ani 15s infinite ease-in;
+}
+@keyframes sun-ani{
+    100%{transform: translate(-100px,-100px);}
+}
+.sky{
+    background-image: url(./sky.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -4%;
+    width: 100%;
+    height: 500px;
+    overflow-x: hidden;
+}
+.inner-container{
+    width: 100%;
+    height: 400px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.buildings{
+    background-image: url(./city.png);
+    width: 200%;
+    height: 400px;
+    margin-top: -5%;
+    background-repeat: repeat-x;
+   
+    animation: build 20s infinite ease-in;
+}
+@keyframes build{
+    100%{transform: translateX(-800px);}
+}
+.road
+{
+    background-image: url(./road.jpg);
+    background-repeat: repeat-x;
+    width: 650%;
+    height: 480px;
+    margin-top: -11%;
+    animation: road 10s infinite ease-in;
+}
+@keyframes road{
+    100%{transform: translateX(-8000px);}
+}
+.car{
+    background-image: url(./car.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:800px;
+    height: 300px;
+    position: fixed;
+    top: 40%;
+    left: 21.5%;
+}
+.flag{
+    background-image: url(./indian-flag.png);
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    top: 46%;
+    left: 62%;
+    background-repeat: no-repeat;
+}
+.wheel1{
+    background-image: url(./wheel.png);
+    background-size: cover;
+    background-position: center;
+    width: 150px;
+    height: 150px;
+    position: fixed;
+    top: 64%;
+    left: 25.8%;
+    animation: wheel 4s infinite ease-in ;
+}
+@keyframes wheel{
+    100%{transform: rotate(360deg);}
+}
+.wheel2{
+    background-image: url(./wheel.png);
+    background-size: cover;
+    background-position: center;
+    width: 150px;
+    height: 150px;
+    position: fixed;
+    top: 64%;
+    left: 58%;
+    animation: wheel 4s infinite ease-in;
+}
